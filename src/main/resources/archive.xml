@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+    <students>
+        <student id="1">
+            <name>user1</name>
+            <age>12</age>
+        </student>
+        <student id="2">
+            <name>new</name>
+            <age>14</age>
+        </student>
+        <student id="3">
+            <name>newUser</name>
+            <age>666</age>
+        </student>
+    </students>
+</archive>

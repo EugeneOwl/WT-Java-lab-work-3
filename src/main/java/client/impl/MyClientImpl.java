@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
+import static constant.MessageConstant.CLIENT_START_MESSAGE;
 import static constant.ServerConstant.CLIENT_HOST;
 import static constant.ServerConstant.EXIT_KEY_WORD;
 import static constant.ServerConstant.SERVER_PORT;
@@ -15,6 +16,7 @@ public class MyClientImpl implements MyClient {
 
     @Override
     public void run() throws Exception {
+        System.out.println(CLIENT_START_MESSAGE);
         Socket socket = new Socket(CLIENT_HOST, SERVER_PORT);
         BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         PrintWriter out = new PrintWriter(socket.getOutputStream(), true);

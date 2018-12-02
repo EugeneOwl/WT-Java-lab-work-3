@@ -1,10 +1,8 @@
 import client.impl.MyClientImpl;
 
-import java.io.IOException;
-
 public class ClientApp {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         try {
             new MyClientImpl().run();
         } catch (Exception e) {
